@@ -15,7 +15,7 @@ class App < Sinatra::Base
         members.each do |member_params|
             SuperHero.new(member_params)
         end
-        @super_heros = SuperHero.all
+        @super_heroes = SuperHero.all
         #binding.pry
         erb :team
     end
