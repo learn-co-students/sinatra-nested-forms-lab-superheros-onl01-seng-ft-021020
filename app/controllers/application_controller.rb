@@ -9,10 +9,7 @@ get '/' do
 	erb  :'/super_hero'
   end
   
-  get '/super_hero' do
-    erb :super_hero
-  end
-  
+
   
   
   
