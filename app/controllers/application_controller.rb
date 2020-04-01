@@ -5,8 +5,8 @@ class App < Sinatra::Base
 
     set :views, Proc.new { File.join(root, "../views/") }
 
-  get '/' do
-redirect to '/super_hero'
+get '/' do
+	erb  :super_hero
   end
   
   get '/super_hero' do
