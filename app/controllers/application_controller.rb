@@ -16,7 +16,7 @@ redirect to '/super_hero'
   
   
   
-get '/teams' do
+get '/team' do
  binding.pry
       @team = Team.new(name: params[:team][:name], motto: params[:team][:motto])
       members = params[:team][:members]
@@ -26,7 +26,7 @@ get '/teams' do
       end
       @super_heroes = SuperHero.all
 
-      erb :teams
+      erb :team
     end
 
   
